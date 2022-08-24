@@ -1,6 +1,7 @@
-Step by Step API with Laravel & Vue
 
-Backend Service :
+**Step by Step API with Laravel & Vue**
+
+**Backend Service :**
 1. Install kebutuhan Laravel & siapkan database engine (Mysql) + Database baru
 2. Buat Project bernama Backend
     composer create-project laravel/laravel backend
@@ -45,7 +46,7 @@ Backend Service :
         return response()->json(['success'=>false, 'message'=>'Endpoint Not Found'], 404);
     });
 
-IP Restriction
+**IP Restriction**
 19. Buat middleware penanganan whitelist IP 
     php artisan make:middleware RestrictIpAddressMiddleware
 20. Daftarkan middleware pada kernel.php (bagian API)
@@ -67,9 +68,6 @@ IP Restriction
     Daftarkan di kernel.php
     buat function exception di handler.php
 
-Frontend Service :
-1. vue create Frontend
-2. vue add router
-3. npm install vuex axios
-4. npm run serve
+**Frontend Service :**
+
 
